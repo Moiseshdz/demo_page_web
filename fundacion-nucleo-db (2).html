@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fundación Núcleo DB A.C. — Salud · Resiliencia · Humanidad</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=1.0" />
+  <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+</head>
+
+<body>
+
+  <div id="preloader">
+    <center>
+      <div class="loader-content">
+        <img src="icon.png" alt="Logo">
+        <div class="logo-t"><em>Fundación</em><strong>Núcleo DB</strong></div>
+      </div>
+    </center>
+  </div>
+
+  <header id="hd">
+    <a href="#top" class="logo">
+      <img src="logo.jpg" alt=""
+        style="width:40px; height:40px; border-radius:50%; object-fit:cover; transform:scale(1.2);">
+      </svg>
+      <div class="logo-t"><em>Fundación</em><strong>Núcleo DB A.C.</strong></div>
+    </a>
+    <nav class="nav-links">
+      <a href="#nosotros">Nosotros</a>
+      <a href="#programas">Programas</a>
+      <a href="#impacto">Impacto</a>
+      <a href="#galeria">Galería</a>
+      <a href="#equipo">Equipo</a>
+      <a href="#donar" class="nav-cta">Donar</a>
+    </nav>
+    <div class="brgr" id="brgr" onclick="tM()"><span></span><span></span><span></span></div>
+  </header>
+  <div class="mob" id="mob">
+    <a href="#nosotros" onclick="cM()">Nosotros</a>
+    <a href="#programas" onclick="cM()">Programas</a>
+    <a href="#impacto" onclick="cM()">Impacto</a>
+    <a href="#galeria" onclick="cM()">Galería</a>
+    <a href="#equipo" onclick="cM()">Equipo</a>
+    <a href="#donar" class="nav-cta" style="width:fit-content" onclick="cM()">Donar ahora</a>
+  </div>
+
+  <!-- HERO -->
+  <!-- HERO -->
+  <div class="hero" id="top">
+    <div class="trk" id="trk">
+
+      <!-- Slide 1 -->
+      <div class="sl">
+        <div class="slbg" style="
+      background-image:url('slide1.jpg');
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;">
+        </div>
+
+        <div class="slc">
+          <div class="sl-tag">Nuestra misión</div>
+          <h1 class="sl-h">Transformando vidas con salud, resiliencia y humanidad</h1>
+          <p class="sl-p">
+            Somos una organización civil comprometida con el bienestar integral de las comunidades más vulnerables de
+            México.
+          </p>
+          <a href="#nosotros" class="sl-btn">
+            Conocer más
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="sl">
+        <div class="slbg" style="
+      background-image:url('slide2.jpg');
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;">
+        </div>
+
+        <div class="slc">
+          <div class="sl-tag">Salud comunitaria</div>
+          <h1 class="sl-h">Brigadas de salud donde más se necesitan</h1>
+          <p class="sl-p">
+            Más de 300 personas han recibido atención médica directa y orientación en salud preventiva.
+          </p>
+          <a href="#programas" class="sl-btn">
+            Ver programas
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="sl">
+        <div class="slbg" style="
+      background-image:url('slide3.jpeg');
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;">
+        </div>
+
+        <div class="slc">
+          <div class="sl-tag">Únete</div>
+          <h1 class="sl-h">Tu apoyo puede cambiar la vida de una familia</h1>
+          <p class="sl-p">
+            Con tu donación o voluntariado ayudas a transformar cientos de historias en México.
+          </p>
+          <a href="#donar" class="sl-btn">
+            Apoyar ahora
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Flechas -->
+    <button class="c-arr arr-l" onclick="mv(-1)">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+        <path d="M19 12H5M12 19l-7-7 7-7" />
+      </svg>
+    </button>
+
+    <button class="c-arr arr-r" onclick="mv(1)">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+        <path d="M5 12h14M12 5l7 7-7 7" />
+      </svg>
+    </button>
+
+    <!-- Puntos -->
+    <div class="c-dots" id="dots">
+      <button class="dot a" onclick="go(0)"></button>
+      <button class="dot" onclick="go(1)"></button>
+      <button class="dot" onclick="go(2)"></button>
+    </div>
+
+  </div>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="sc fi">
+      <div class="sn">500<sup>+</sup></div>
+      <div class="sl2">Familias beneficiadas</div>
+    </div>
+    <div class="sc fi d1">
+      <div class="sn">12<sup>+</sup></div>
+      <div class="sl2">Programas activos</div>
+    </div>
+    <div class="sc fi d2">
+      <div class="sn">300<sup>+</sup></div>
+      <div class="sl2">Atenciones médicas</div>
+    </div>
+    <div class="sc fi d3">
+      <div class="sn">3<sup>+</sup></div>
+      <div class="sl2">Años de labor</div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about sec" id="nosotros">
+    <div class="lbl">Quiénes somos</div>
+    <h2>Una fundación construida sobre el compromiso real</h2>
+    <div class="ag">
+      <div class="a-img fi">
+        <div class="a-ph">
+          <img src="Quienes somos.jpg" alt="" style="width:100%; height:100%; object-fit:cover; border-radius:8px">
+          </svg>
+        </div>
+        <div class="a-badge"><strong>3+</strong><span>Años de impacto</span></div>
+      </div>
+      <div class="fi d1">
+        <p class="sub">La Fundación Núcleo DB A.C. es una organización de la sociedad civil que trabaja con rigor,
+          transparencia y vocación de servicio para acompañar a personas y comunidades en situación de vulnerabilidad.
+        </p>
+        <p class="sub" style="margin-top:.7rem">Creemos que la salud, la resiliencia y la humanidad son derechos
+          concretos que se construyen con acciones concretas, todos los días.</p>
+        <div class="a-vals">
+          <div class="av">
+            <div class="avd"></div>
+            <div>
+              <div class="av-t">Salud Integral</div>
+              <div class="av-s">Bienestar físico, mental y social como derecho fundamental de toda persona.</div>
+            </div>
+          </div>
+          <div class="av">
+            <div class="avd"></div>
+            <div>
+              <div class="av-t">Resiliencia Comunitaria</div>
+              <div class="av-s">Fortalecemos la capacidad colectiva de superar adversidades y construir futuro.</div>
+            </div>
+          </div>
+          <div class="av">
+            <div class="avd"></div>
+            <div>
+              <div class="av-t">Humanidad</div>
+              <div class="av-s">Empatía, respeto y solidaridad en cada acción, sin excepción.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORIES -->
+  <section class="stories sec" id="impacto">
+    <div class="sh">
+      <div class="fi">
+        <div class="lbl">Historias de impacto</div>
+        <h2>Vidas que inspiran</h2>
+      </div>
+
+      <a href="#cstrip"
+        style="text-decoration:none;font-size:.76rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--N);display:flex;align-items:center;gap:.38rem;white-space:nowrap"
+        class="fi d1">
+        Ver todas
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <path d="M5 12h14M12 5l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="sg">
+
+      <!-- Historia 1 -->
+      <div class="sc2 fi">
+        <div class="sth" style="background:linear-gradient(145deg,#b8cad5,#d2e2ec)">
+
+          <img src="his1.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+
+          <svg viewBox="0 0 24 24" fill="none" stroke="#0a2540" stroke-width="1.5">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+          </svg>
+
+          <div class="stl">Salud</div>
+        </div>
+
+        <div class="sb">
+          <div class="stag">Brigadas de salud</div>
+          <div class="sti">Cómo una brigada médica cambió a toda una comunidad rural</div>
+          <p class="stx">
+            Durante tres días, nuestro equipo atendió a más de 80 personas que no habían tenido acceso a atención médica
+            en años.
+          </p>
+          <a href="#" class="stlk">Leer historia</a>
+        </div>
+      </div>
+
+      <!-- Historia 2 -->
+      <div class="sc2 fi d1">
+        <div class="sth" style="background:linear-gradient(145deg,#cec4bf,#e0d6d0)">
+
+          <img src="his2.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+
+          <!-- icono diente -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="#0a2540" stroke-width="1.5">
+            <path
+              d="M12 3c-3.5 0-6 2.5-6 6 0 4 2 8 3 10 .3.6 1 .6 1.3 0 .7-1.3 1.2-3 1.7-4.5.2-.6 1-.6 1.2 0 .5 1.5 1 3.2 1.7 4.5.3.6 1 .6 1.3 0 1-2 3-6 3-10 0-3.5-2.5-6-6-6z" />
+          </svg>
+
+          <div class="stl">Salud Dental</div>
+        </div>
+
+        <div class="sb">
+          <div class="stag">Atención odontológica</div>
+          <div class="sti">Sonrisas que regresan gracias a nuestras brigadas dentales</div>
+          <p class="stx">
+            Nuestros voluntarios odontólogos brindaron revisiones, limpiezas y orientación sobre higiene bucal a niños y
+            adultos que nunca habían tenido acceso a atención dental.
+          </p>
+          <a href="#" class="stlk">Leer historia</a>
+        </div>
+      </div>
+
+      <!-- Historia 3 -->
+      <div class="sc2 fi d2">
+        <div class="sth" style="background:linear-gradient(145deg,#bec8c0,#d0dcd2)">
+
+          <img src="his3.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;">
+
+          <svg viewBox="0 0 24 24" fill="none" stroke="#0a2540" stroke-width="1.5">
+            <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z" />
+            <path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z" />
+          </svg>
+
+          <div class="stl">Educación</div>
+        </div>
+
+        <div class="sb">
+          <div class="stag">Desarrollo personal</div>
+          <div class="sti">El taller que abrió nuevas puertas para jóvenes</div>
+          <p class="stx">
+            Jóvenes participaron en nuestro programa de habilidades y ahora cuentan con herramientas para seguir
+            desarrollándose.
+          </p>
+          <a href="#" class="stlk">Leer historia</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- PROGRAMS -->
+  <section class="progs sec" id="programas">
+    <div class="lbl">Áreas de acción</div>
+    <h2>Nuestros programas</h2>
+    <div class="pg">
+      <div class="pi fi">
+        <div class="pi-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+          </svg></div>
+        <div class="pi-n">Programa 01</div>
+        <div class="pi-t">Salud y Bienestar</div>
+        <p class="pi-d">Brigadas de salud preventiva, orientación nutricional, atención médica básica y seguimiento
+          continuo para comunidades con acceso limitado al sistema de salud público.</p>
+        <a href="#cstrip" class="pi-l">Más información <svg width="11" height="11" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2.2">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg></a>
+      </div>
+      <div class="pi fi d1">
+        <div class="pi-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+            <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+          </svg></div>
+        <div class="pi-n">Programa 02</div>
+        <div class="pi-t">Salud Dental y Hábitos Saludables</div>
+        <p class="pi-d">
+          Atención odontológica preventiva, revisiones, limpiezas y orientación sobre higiene bucal para mejorar la
+          salud
+          dental de niños, jóvenes y adultos en comunidades con acceso limitado a servicios dentales.
+        </p>
+        <a href="#cstrip" class="pi-l">Más información <svg width="11" height="11" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2.2">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg></a>
+      </div>
+      <div class="pi fi d2">
+        <div class="pi-ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+            <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z" />
+            <path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z" />
+          </svg></div>
+        <div class="pi-n">Programa 03</div>
+        <div class="pi-t">Educación y Desarrollo</div>
+        <p class="pi-d">Capacitaciones, talleres de habilidades socioemocionales, mentoría y programas de desarrollo
+          personal para jóvenes y adultos en situación de vulnerabilidad.</p>
+        <a href="#cstrip" class="pi-l">Más información <svg width="11" height="11" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2.2">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg></a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- GALLERY -->
+  <section class="gal" id="galeria">
+    <div class="lbl">Galería</div>
+    <h2>Nuestra labor en imágenes</h2>
+    <p class="sub">Momentos reales de conexión, cuidado y transformación en las comunidades que acompañamos.</p>
+
+    <div class="gg">
+
+      <div class="gi">
+        <div class="gp">
+          <img src="gal1.jpg" onclick="abrirFoto(this.src)">
+          <div class="glb">Brigada médica</div>
+        </div>
+        <div class="gov" onclick="abrirFoto('gal1.jpg')">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+            <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="gi">
+        <div class="gp">
+          <img src="gal2.jpg" onclick="abrirFoto(this.src)">
+          <div class="glb">Taller comunitario</div>
+        </div>
+        <div class="gov" onclick="abrirFoto('gal2.jpg')">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+            <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="gi">
+        <div class="gp">
+          <img src="gal3.jpg" onclick="abrirFoto(this.src)">
+          <div class="glb">Salud dental</div>
+        </div>
+        <div class="gov" onclick="abrirFoto('gal3.jpg')">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+            <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+          </svg>
+        </div>
+      </div>
+
+
+
+      <div class="gi">
+        <div class="gp">
+          <img src="gal4.jpg" onclick="abrirFoto(this.src)">
+          <div class="glb">Voluntariado</div>
+        </div>
+        <div class="gov" onclick="abrirFoto('gal4.jpg')">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+            <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+          </svg>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- MODAL PARA VER IMAGEN GRANDE -->
+  <div id="modalFoto" style="
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.9);
+display:none;
+align-items:center;
+justify-content:center;
+z-index:9999;
+">
+
+    <img id="fotoGrande" style="max-width:90%;max-height:90%;border-radius:10px">
+
+    <span onclick="cerrarFoto()" style="
+position:absolute;
+top:30px;
+right:40px;
+font-size:40px;
+color:white;
+cursor:pointer;">×</span>
+
+  </div>
+
+  <!-- TEAM -->
+  <section class="team sec" id="equipo">
+    <div class="lbl">Equipo</div>
+    <h2>Las personas detrás de la fundación</h2>
+    <p class="sub">Un equipo multidisciplinario unido por la convicción de que el cambio social es posible y necesario.
+    </p>
+
+    <div class="tg">
+
+      <!-- PERSONA 1 -->
+      <div class="tc fi">
+        <div class="tph">
+          <img src="c1.jpg" alt="Presidente">
+        </div>
+
+        <div class="tn">Presidente</div>
+        <div class="tr">Dr. Bruno Rivera</div>
+        <p class="td">
+          Profesional con más de 10 años de experiencia en gestión de organizaciones civiles y proyectos de impacto
+          social.
+        </p>
+      </div>
+
+      <!-- PERSONA 2 -->
+      <div class="tc fi d1">
+        <div class="tph">
+          <img src="c2.jpg" alt="Vicepresidente">
+        </div>
+        <div class="tn">Vicepresidente</div>
+        <div class="tr">TUM. David Contreras</div>
+        <p class="td">
+          Técnico en Urgencias Médicas con experiencia en atención prehospitalaria, apoyo en brigadas de salud y
+          coordinación de acciones de emergencia en comunidades.
+        </p>
+      </div>
+
+      <!-- PERSONA 3 -->
+      <div class="tc fi d2">
+        <div class="tph">
+          <img src="c3.jpg" alt="Coordinadora Médica">
+        </div>
+
+        <div class="tn">Coordinadora Médica</div>
+        <div class="tr">Dra. Tania Rivera</div>
+        <p class="td">
+          Médica con experiencia en brigadas de salud, atención preventiva y cuidado médico en comunidades.
+        </p>
+      </div>
+
+      <!-- PERSONA 4 -->
+      <div class="tc fi d3">
+        <div class="tph">
+          <img src="c4.jpg" alt="Voluntario">
+        </div>
+
+        <div class="tn">Voluntario</div>
+        <div class="tr">C. Ulises Martínez</div>
+        <p class="td">
+          Colaborador activo en actividades comunitarias, apoyo logístico en brigadas y participación en acciones
+          solidarias para fortalecer el trabajo de la fundación.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+  <!-- DONATE -->
+  <section class="don" id="donar">
+    <div class="lbl">Apoya</div>
+    <h2>Tu donación genera cambio real</h2>
+    <p class="sub">Cada peso donado se convierte directamente en atención médica, apoyo psicológico y desarrollo
+      comunitario.</p>
+    <div class="di">
+      <div class="fi">
+        <h3 style="font-family:'Sora',sans-serif;font-size:1rem;font-weight:700;color:var(--N);margin-bottom:.25rem">
+          Selecciona un monto</h3>
+        <p style="font-size:.8rem;color:var(--M);margin-bottom:1.1rem">¿Cuánto te gustaría donar?</p>
+        <div class="amts">
+          <button class="ab" onclick="sa(this)">$100</button>
+          <button class="ab s" onclick="sa(this)">$250</button>
+          <button class="ab" onclick="sa(this)">$500</button>
+          <button class="ab" onclick="sa(this)">$1,000</button>
+          <button class="ab" onclick="sa(this)">$2,500</button>
+          <button class="ab" onclick="sa(this)">Otro</button>
+        </div>
+        <div class="dimpa">
+          <p><strong>$250 permite:</strong> costear una consulta médica completa para una persona sin acceso al sistema
+            de salud público.</p>
+        </div>
+        <div style="margin-top:2.2rem">
+          <div class="lbl" style="font-size:.62rem">Voluntariado</div>
+          <h3 style="font-family:'Sora',sans-serif;font-size:1rem;font-weight:700;color:var(--N);margin-bottom:.5rem">
+            ¿Eres profesionista?</h3>
+          <p style="font-size:.82rem;color:var(--M);line-height:1.8;margin-bottom:1rem">Tu tiempo y conocimiento pueden
+            multiplicar nuestro impacto. Salud, psicología, derecho, educación — todos suman.</p>
+          <a href="#cstrip"
+            style="display:inline-block;background:var(--N);color:#fff;text-decoration:none;padding:.72rem 1.7rem;font-size:.76rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;transition:background .25s"
+            onmouseover="this.style.background='#bf3a2b'" onmouseout="this.style.background='#0a2540'">Ser
+            voluntario</a>
+        </div>
+      </div>
+      <div class="dform fi d1">
+        <div class="dft">Completa tu donación</div>
+        <form onsubmit="subD(event)">
+          <div class="fr">
+            <div class="fg"><label>Nombre</label><input type="text" placeholder="Tu nombre" required /></div>
+            <div class="fg"><label>Apellidos</label><input type="text" placeholder="Tus apellidos" required /></div>
+          </div>
+          <div class="fg"><label>Correo electrónico</label><input type="email" placeholder="correo@ejemplo.com"
+              required /></div>
+          <div class="fg"><label>Teléfono (opcional)</label><input type="tel" placeholder="+52 000 000 0000" /></div>
+          <div class="fg"><label>Mensaje (opcional)</label><textarea
+              placeholder="¿Algo que quieras compartir?"></textarea></div>
+          <button class="dsub" type="submit" id="db">Confirmar donación →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT STRIP -->
+  <div class="cstrip" id="cstrip">
+    <div>
+      <div class="lbl">Contacto</div>
+      <div class="csh">¿Tienes preguntas?</div>
+      <p class="csp">Estamos aquí para atender consultas sobre programas, voluntariado, donaciones y alianzas
+        institucionales. Escríbenos.</p>
+      <div style="margin-top:1.2rem;display:flex;flex-direction:column;gap:.45rem">
+        <p style="font-size:.8rem;color:rgba(255,255,255,.3);display:flex;align-items:center;gap:.65rem"><svg width="13"
+            height="13" viewBox="0 0 24 24" fill="none" stroke="#bf3a2b" stroke-width="2">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+          </svg>Fundación Núcleo DB A.C. en Facebook</p>
+        <p style="font-size:.8rem;color:rgba(255,255,255,.3);display:flex;align-items:center;gap:.65rem"><svg width="13"
+            height="13" viewBox="0 0 24 24" fill="none" stroke="#bf3a2b" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>México</p>
+      </div>
+    </div>
+    <div class="csb">
+      <a href="https://www.facebook.com/profile.php?id=100088084623357" target="_blank" class="bwh">Visitar Facebook</a>
+      <a href="mailto:contacto@nucleodb.org" class="bow">Enviar correo</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="ftp">
+      <div>
+        <div style="font-size:.56rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.14)">
+          Fundación</div>
+        <div class="fbn">Núcleo DB A.C.</div>
+        <div class="fbt">Salud · Resiliencia · Humanidad</div>
+        <p class="fbd">Organización de la sociedad civil mexicana comprometida con el bienestar integral de comunidades
+          vulnerables.</p>
+      </div>
+      <div>
+        <div class="fct">Navegación</div>
+        <ul class="fls">
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#programas">Programas</a></li>
+          <li><a href="#impacto">Historias de impacto</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#equipo">Equipo</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="fct">Involúcrate</div>
+        <ul class="fls">
+          <li><a href="#donar">Hacer una donación</a></li>
+          <li><a href="#donar">Ser voluntario</a></li>
+          <li><a href="#cstrip">Alianzas</a></li>
+          <li><a href="#cstrip">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="fct">Valores</div>
+        <ul class="fls">
+          <li><a href="#nosotros">Salud Integral</a></li>
+          <li><a href="#nosotros">Resiliencia</a></li>
+          <li><a href="#nosotros">Humanidad</a></li>
+          <li><a href="#nosotros">Transparencia</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbot">
+      <div class="fcp">© 2025 Fundación Núcleo DB A.C. — Todos los derechos reservados.</div>
+      <div class="flg"><a href="#">Aviso de privacidad</a><a href="#">Transparencia</a></div>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar
+    const hd = document.getElementById('hd');
+    window.addEventListener('scroll', () => hd.classList.toggle('on', window.scrollY > 8));
+    function tM() { document.getElementById('mob').classList.toggle('show') }
+    function cM() { document.getElementById('mob').classList.remove('show') }
+
+    // Carousel
+    let cur = 0, tot = 3, tmr;
+    function mv(d) { go((cur + d + tot) % tot) }
+    function go(n) {
+      cur = n;
+      document.getElementById('trk').style.transform = 'translateX(-' + (cur * 100) + '%)';
+      document.querySelectorAll('.dot').forEach((d, i) => d.classList.toggle('a', i === cur));
+      rt();
+    }
+    function rt() { clearInterval(tmr); tmr = setInterval(() => mv(1), 5500) }
+    rt();
+
+    // Fade in
+    const obs = new IntersectionObserver(e => { e.forEach(x => { if (x.isIntersecting) x.target.classList.add('v') }) }, { threshold: .1 });
+    document.querySelectorAll('.fi').forEach(el => obs.observe(el));
+
+    // Amounts
+    function sa(b) { document.querySelectorAll('.ab').forEach(x => x.classList.remove('s')); b.classList.add('s') }
+
+    // Donate submit
+    function subD(e) {
+      e.preventDefault();
+      const b = document.getElementById('db');
+      b.textContent = '✓ Enviado — nos pondremos en contacto pronto';
+      b.style.background = '#1a6b3e'; b.disabled = true;
+      setTimeout(() => { b.textContent = 'Confirmar donación →'; b.style.background = ''; b.disabled = false; e.target.reset(); }, 5000);
+    }
+  </script>
+
+  <style>
+    .gp {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .gp img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      cursor: pointer;
+    }
+
+    .tph {
+      width: 100%;
+      height: 300px;
+      /* altura fija para todas las fotos */
+      overflow: hidden;
+      position: relative;
+      margin-bottom: 15px;
+      border-radius: 10px;
+    }
+
+    .tph img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity .8s ease, visibility .8s;
+    }
+
+    .loader-content img {
+      width: 120px;
+      animation: logoElegant 2s ease-in-out;
+    }
+
+    @keyframes logoElegant {
+      0% {
+        opacity: 0;
+        transform: scale(.7);
+      }
+
+      50% {
+        opacity: 1;
+        transform: scale(1.05);
+      }
+
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    #preloader.hide {
+      opacity: 0;
+      visibility: hidden;
+    }
+  </style>
+
+  <script>
+    /* FUNCION DE ABRIR Y CERRAR FOTOS */
+    function abrirFoto(src) {
+      document.getElementById("modalFoto").style.display = "flex";
+      document.getElementById("fotoGrande").src = src;
+    }
+
+    function cerrarFoto() {
+      document.getElementById("modalFoto").style.display = "none";
+    }
+
+
+    /* ANIMACION DE ENTRADA */
+    document.addEventListener("DOMContentLoaded", function () {
+
+      if (!localStorage.getItem("preloaderShown")) {
+
+        window.addEventListener("load", function () {
+          setTimeout(function () {
+            document.getElementById("preloader").classList.add("hide");
+          }, 1000);
+        });
+
+        localStorage.setItem("preloaderShown", "true");
+
+      } else {
+        document.getElementById("preloader").style.display = "none";
+      }
+
+    });
+  </script>
+</body>
+
+</html>
